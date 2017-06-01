@@ -33,6 +33,7 @@
       <sprite>sprites\spr_signpost</sprite>
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_dialogue</sprite>
+      <sprite>sprites\spr_lamp</sprite>
     </sprites>
     <sprites name="tutorial">
       <sprite>sprites\spr_wasd</sprite>
