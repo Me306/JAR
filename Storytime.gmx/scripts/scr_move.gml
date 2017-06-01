@@ -5,6 +5,7 @@ col = argument0
 //manage speed/acceleration
 //horiz
 hsp = (key_right-key_left)*5;
+
 if (!key_right && !key_left){
     if (hsp>0) hsp -= acc
     else if (hsp<0)hsp += acc

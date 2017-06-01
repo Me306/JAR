@@ -22,7 +22,6 @@
       <sprites name="off">
         <sprite>sprites\spr_deadoffhand</sprite>
       </sprites>
-      <sprite>sprites\spr_shadow</sprite>
     </sprites>
     <sprites name="Companions">
       <sprite>sprites\spr_pet1</sprite>
@@ -41,6 +40,7 @@
     </sprites>
     <sprites name="FX">
       <sprite>sprites\spr_glow</sprite>
+      <sprite>sprites\spr_shadow</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -77,13 +77,14 @@
       <objects name="tutorial">
         <object>objects\obj_control</object>
       </objects>
+      <object>objects\obj_nightCycle</object>
     </objects>
     <objects name="HUD">
       <object>objects\obj_dialogue</object>
       <object>objects\obj_speaker</object>
       <object>objects\obj_sign</object>
     </objects>
-    <object>objects\obj_nightCycle</object>
+    <object>objects\obj_ai1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
