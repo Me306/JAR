@@ -131,7 +131,9 @@ x+=spdx
 spdy = (targety - y)/10
 y+=spdy
 
-
+if(image_index = 1){
+    audio_play_sound(snd_scream,1,true)
+} else audio_stop_sound(snd_scream)
 
 
 
