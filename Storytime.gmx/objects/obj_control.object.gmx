@@ -25,15 +25,26 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>wx = obj_player1.x
-wy = obj_player1.y - 64
-ax = obj_player1.x - 64
+            <string>///how to play pos
+//WASD
+wx = obj_player1.x
+wy = obj_player1.y - 80
+ax = obj_player1.x - 80
 ay = obj_player1.y
 sx = obj_player1.x
-sy = obj_player1.y + 64
-dx = obj_player1.x + 64
+sy = obj_player1.y + 80
+dx = obj_player1.x + 80
 dy = obj_player1.y
 
+//DIRECTIONS
+arupx       = obj_player1.x
+arupy       = obj_player1.y - 32
+arleftx     = obj_player1.x - 32
+arlefty     = obj_player1.y
+ardownx     = obj_player1.x
+ardowny     = obj_player1.y + 32
+arrightx    = obj_player1.x + 32
+arrighty    = obj_player1.y
 </string>
           </argument>
         </arguments>
@@ -85,6 +96,11 @@ draw_sprite(spr_wasd,0,wx,wy)
 draw_sprite(spr_wasd,1,ax,ay)
 draw_sprite(spr_wasd,2,sx,sy)
 draw_sprite(spr_wasd,3,dx,dy)
+
+draw_sprite(spr_arrows,0,arupx,arupy)
+draw_sprite(spr_arrows,1,arleftx,arlefty)
+draw_sprite(spr_arrows,2,ardownx,ardowny)
+draw_sprite(spr_arrows,3,arrightx,arrighty)
 </string>
           </argument>
         </arguments>

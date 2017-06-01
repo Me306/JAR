@@ -37,6 +37,7 @@
     </sprites>
     <sprites name="tutorial">
       <sprite>sprites\spr_wasd</sprite>
+      <sprite>sprites\spr_arrows</sprite>
     </sprites>
     <sprites name="FX">
       <sprite>sprites\spr_glow</sprite>
