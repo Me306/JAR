@@ -84,7 +84,7 @@ if(frame &lt; 3){
 draw_self()
 draw_sprite_ext(spr_flame,frame,x,bbox_top,1,1,0,c_white,.8)
 draw_sprite_ext(spr_lamp,1,x,y,1,1,0,c_white,1)
-
+draw_sprite_ext(spr_grass,1,x,bbox_bottom,1,1,0,c_white,1)
 </string>
           </argument>
         </arguments>
