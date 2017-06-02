@@ -71,6 +71,52 @@ depth = -y
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///activate speaker
+//while instance_exists(obj_dialogue) dialogue = obj_dialogue;
+
+
+
+if(keyboard_check_pressed(ord("E")) &amp;&amp; place_meeting(x,y,obj_sign)){
+    if !instance_exists(obj_dialogue){
+
+        with(obj_speaker){
+            //if !instance_exists(dialogue){
+                dialogue = instance_create(x+xoffset,y+yoffset,obj_dialogue);
+                dialogue.text = text;
+            //}
+        
+        }
+    }else if instance_exists(obj_dialogue){
+        dialogue = obj_dialogue
+        dialogue.text_page++;
+        dialogue.text_count = 0;
+        if (dialogue.text_page &gt; array_length_1d(dialogue.text)-1){
+            with (dialogue){
+                instance_destroy()
+            }
+        }
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="8" enumb="0">
       <action>

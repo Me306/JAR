@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>self</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -81,6 +81,7 @@ image_index = choose(0,1)
           <argument>
             <kind>1</kind>
             <string>///move companion
+depth = -y
 
 // y positiona
 targety = obj_body1.y - 50

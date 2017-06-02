@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>//set variables
 alpha = 0;
-daylength = 40;
+daylength = 20;
 nightlength = 10;
 alarm[0] = room_speed*daylength;
 
@@ -90,10 +90,10 @@ nightCycleSurf = surface_create(room_width,room_height);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if alpha &lt; .9{
+            <string>if alpha &lt; .92{
     alpha += 0.001;
-    alarm[0]=.9;
-} else if alpha &gt;= .9{
+    alarm[0]=.99;
+} else if alpha &gt;= .92{
     alarm[1] = room_speed*nightlength
 }
 </string>
@@ -156,6 +156,12 @@ if(room = rm_main){
     with(obj_companion){
         draw_set_blend_mode(bm_src_colour);
         draw_sprite(spr_glow,1,x,y);
+        draw_set_blend_mode(bm_normal);
+    }
+    
+    with(obj_glow){
+        draw_set_blend_mode(bm_src_colour);
+        draw_sprite(spr_glow,0,x,y);
         draw_set_blend_mode(bm_normal);
     }
     surface_reset_target();

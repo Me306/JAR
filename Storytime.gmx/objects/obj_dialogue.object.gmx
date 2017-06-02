@@ -3,7 +3,7 @@
   <spriteName>spr_dialogue</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-999</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -32,8 +32,11 @@ text_page = 0;
 text_count = 0;
 spd = .5;
 display_scale = display_get_gui_width()/view_wview[0];
-width = sprite_width*display_scale;
-margin = 8;
+width = sprite_width*display_scale*2;
+margin = 14;
+
+image_xscale = 2;
+image_yscale = 2;   
 </string>
           </argument>
         </arguments>

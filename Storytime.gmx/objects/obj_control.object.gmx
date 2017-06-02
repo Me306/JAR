@@ -3,53 +3,11 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10000</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///how to play pos
-//WASD
-wx = obj_player1.x
-wy = obj_player1.y - 80
-ax = obj_player1.x - 80
-ay = obj_player1.y
-sx = obj_player1.x
-sy = obj_player1.y + 80
-dx = obj_player1.x + 80
-dy = obj_player1.y
-
-//DIRECTIONS
-arupx       = obj_player1.x
-arupy       = obj_player1.y - 32
-arleftx     = obj_player1.x - 32
-arlefty     = obj_player1.y
-ardownx     = obj_player1.x
-ardowny     = obj_player1.y + 32
-arrightx    = obj_player1.x + 32
-arrighty    = obj_player1.y
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -69,6 +27,8 @@ arrighty    = obj_player1.y
             <kind>1</kind>
             <string>if(keyboard_check_pressed(vk_escape))
     game_end()
+    
+if(keyboard_check_pressed(ord("R"))) game_restart()
 </string>
           </argument>
         </arguments>
@@ -91,16 +51,27 @@ arrighty    = obj_player1.y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-draw_sprite_ext(spr_wasd,0,wx,wy,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_wasd,1,ax,ay,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_wasd,2,sx,sy,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_wasd,3,dx,dy,1,1,0,c_green,0.2)
+            <string>///draw health bars
+depth = -10000
 
-draw_sprite_ext(spr_arrows,0,arupx,arupy,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_arrows,1,arleftx,arlefty,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_arrows,2,ardownx,ardowny,1,1,0,c_green,0.2)
-draw_sprite_ext(spr_arrows,3,arrightx,arrighty,1,1,0,c_green,0.2)
+with(obj_body1){
+    maxhp = obj_player1.maxhp
+    hp = obj_player1.hp
+    disy = 30
+    
+    draw_sprite_ext(spr_healthBar,0,x - (maxhp*16)/4,y + disy,.5,.5,0,c_white,1)
+    draw_sprite_ext(spr_healthBar,1,x,y + disy,(maxhp-1)/2,.5,0,c_white,1)
+    draw_sprite_ext(spr_healthBar,2,x + (maxhp*16)/4,y + disy,.5,.5,0,c_white,1)
+    
+    for(i = 0; i &lt; hp; i ++){
+        draw_sprite_ext(spr_healthBar,3,x - hp*2.25*(hp/maxhp) + (i*16)/2,y + disy,.5,.5,0,c_white,1)   
+    
+    
+    }
+
+    
+    
+}
 </string>
           </argument>
         </arguments>

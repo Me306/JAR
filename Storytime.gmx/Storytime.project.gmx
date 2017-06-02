@@ -22,6 +22,9 @@
       <sprites name="off">
         <sprite>sprites\spr_deadoffhand</sprite>
       </sprites>
+      <sprites name="attack">
+        <sprite>sprites\spr_swing</sprite>
+      </sprites>
     </sprites>
     <sprites name="Companions">
       <sprite>sprites\spr_pet1</sprite>
@@ -34,6 +37,7 @@
       <sprite>sprites\spr_grass</sprite>
       <sprite>sprites\spr_dialogue</sprite>
       <sprite>sprites\spr_lamp</sprite>
+      <sprite>sprites\spr_flame</sprite>
     </sprites>
     <sprites name="tutorial">
       <sprite>sprites\spr_wasd</sprite>
@@ -42,6 +46,7 @@
     <sprites name="FX">
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_shadow</sprite>
+      <sprite>sprites\spr_healthBar</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -58,6 +63,7 @@
         <script>scripts\scr_move.gml</script>
         <script>scripts\scr_player_ini.gml</script>
         <script>scripts\scr_getkeys.gml</script>
+        <script>scripts\scr_attack.gml</script>
       </scripts>
     </scripts>
   </scripts>
@@ -74,18 +80,21 @@
     <objects name="envir">
       <object>objects\obj_wall</object>
       <object>objects\obj_grass</object>
-      <object>objects\obj_signpost</object>
       <objects name="tutorial">
         <object>objects\obj_control</object>
+        <object>objects\obj_tutorial</object>
       </objects>
       <object>objects\obj_nightCycle</object>
+      <object>objects\obj_lamp</object>
     </objects>
     <objects name="HUD">
       <object>objects\obj_dialogue</object>
-      <object>objects\obj_speaker</object>
       <object>objects\obj_sign</object>
+      <object>objects\obj_speaker</object>
+      <object>objects\obj_glow</object>
     </objects>
     <object>objects\obj_ai1</object>
+    <object>objects\obj_entity</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

@@ -3,9 +3,9 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>10000</depth>
   <persistent>0</persistent>
-  <parentName>obj_entity</parentName>
+  <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,40 +25,30 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///initiate player 1
+            <string>///how to play pos
+//WASD
+wx = obj_player1.x
+wy = obj_player1.y - 80
+ax = obj_player1.x - 80
+ay = obj_player1.y
+sx = obj_player1.x
+sy = obj_player1.y + 80
+dx = obj_player1.x + 80
+dy = obj_player1.y
 
-scr_getkeys(1)
-scr_player_ini()
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///controls movement
+//E to interact
+ex = obj_player1.x + 80
+ey = obj_player1.y - 80
 
-scr_getkeys(1)
-scr_move(obj_wall)
-scr_attack(obj_mainhand1, spr_swing, spr_deadmainhand)
-if(mouse_check_button_pressed(mb_left)){
-    atck = 0
-}
+//DIRECTIONS
+arupx       = obj_player1.x
+arupy       = obj_player1.y - 32
+arleftx     = obj_player1.x - 32
+arlefty     = obj_player1.y
+ardownx     = obj_player1.x
+ardowny     = obj_player1.y + 32
+arrightx    = obj_player1.x + 32
+arrighty    = obj_player1.y
 </string>
           </argument>
         </arguments>
@@ -81,8 +71,22 @@ if(mouse_check_button_pressed(mb_left)){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-draw_sprite_ext(spr_shadow,0,obj_body1.x,obj_body1.y,obj_body1.image_xscale,1,0,c_white,1)
+            <string>///draw tutorial arrows
+depth = 10000
+draw_sprite_ext(spr_wasd,0,wx,wy,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_wasd,1,ax,ay,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_wasd,2,sx,sy,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_wasd,3,dx,dy,1,1,0,c_green,0.2)
+
+draw_sprite_ext(spr_wasd,4,ex,ey,1,1,0,c_green,0.2)
+
+draw_sprite_ext(spr_arrows,0,arupx,arupy,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_arrows,1,arleftx,arlefty,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_arrows,2,ardownx,ardowny,1,1,0,c_green,0.2)
+draw_sprite_ext(spr_arrows,3,arrightx,arrighty,1,1,0,c_green,0.2)
+
+
+
 </string>
           </argument>
         </arguments>
