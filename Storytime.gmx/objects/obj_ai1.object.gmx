@@ -30,8 +30,9 @@ vsp=0;
 alarm[0] =room_speed/2;
 
 msp = 7;
-image_speed = 0;
 
+
+depth = -y
 </string>
           </argument>
         </arguments>
@@ -118,9 +119,10 @@ if(!place_meeting(x,y+vsp,obj_wall))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_sprite(spr_deadbody,0,x,y)
-draw_sprite(spr_deadhead,0,x,y-spr_deadbody.sprite_width/4)
-draw_sprite(spr_deadmainhand,0,x,y)
+            <string>draw_sprite(spr_deadmainhand,0,x,y)
+draw_sprite(spr_deadbody,0,x,y)
+draw_sprite(spr_deadhead,0,x,y-spr_deadhead.sprite_height/12)
+
 draw_sprite(spr_deadoffhand,0,x - 20,y)
 
 </string>

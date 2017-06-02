@@ -153,15 +153,16 @@ if(room = rm_main){
         draw_sprite(spr_glow,0,x,y);
         draw_set_blend_mode(bm_normal);
     }
+    
     with(obj_companion){
         draw_set_blend_mode(bm_src_colour);
-        draw_sprite(spr_glow,1,x,y);
+        draw_sprite_ext(spr_glow,1,x,y,1,1,0,c_red,1);
         draw_set_blend_mode(bm_normal);
     }
     
     with(obj_glow){
         draw_set_blend_mode(bm_src_colour);
-        draw_sprite(spr_glow,0,x,y);
+        draw_sprite_ext(spr_glow,0,x,y,2,2,0,c_white,1);
         draw_set_blend_mode(bm_normal);
     }
     surface_reset_target();

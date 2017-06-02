@@ -47,6 +47,8 @@
       <sprite>sprites\spr_glow</sprite>
       <sprite>sprites\spr_shadow</sprite>
       <sprite>sprites\spr_healthBar</sprite>
+      <sprite>sprites\spr_fireball</sprite>
+      <sprite>sprites\spr_mouse</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -65,6 +67,9 @@
         <script>scripts\scr_getkeys.gml</script>
         <script>scripts\scr_attack.gml</script>
       </scripts>
+    </scripts>
+    <scripts name="Controller Scripts">
+      <script>scripts\destroy.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">

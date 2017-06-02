@@ -29,6 +29,12 @@
 
 scr_getkeys(1)
 scr_player_ini()
+
+instance_create(x,y,obj_body1)
+instance_create(x,y,obj_head1)
+instance_create(x,y,obj_offhand1)
+instance_create(x,y,obj_mainhand1)
+
 </string>
           </argument>
         </arguments>
@@ -56,7 +62,7 @@ scr_player_ini()
 scr_getkeys(1)
 scr_move(obj_wall)
 scr_attack(obj_mainhand1, spr_swing, spr_deadmainhand)
-if(mouse_check_button_pressed(mb_left)){
+if(mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)){
     atck = 0
 }
 </string>
