@@ -50,9 +50,13 @@
       <sprite>sprites\spr_fireball</sprite>
       <sprite>sprites\spr_mouse</sprite>
     </sprites>
+    <sprites name="structures">
+      <sprite>sprites\sprite22</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
+    <background>background\background1</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
