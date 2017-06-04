@@ -107,7 +107,7 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; bbox_left &amp;&
 
 if (global.inventory){
     draw_set_alpha(.25);
-    draw_self();
+
     draw_roundrect(view_xview[0]+xstart,view_yview[0]+ystart,view_xview[0]+xstart+32,view_yview[0]+ystart+32,false);
     draw_set_alpha(1);
     if (item!=-1){

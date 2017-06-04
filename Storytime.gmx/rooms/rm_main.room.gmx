@@ -72,28 +72,7 @@
     <instance objName="obj_inventory_box" x="88" y="8" name="inst_3207C64C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_inventory_box" x="128" y="8" name="inst_43E242BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
-  <tiles>
-    <tile bgName="background1" x="608" y="352" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_6A311AE8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="640" y="320" w="32" h="32" xo="0" yo="0" id="10000002" name="inst_743B9C08" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="672" y="288" w="32" h="32" xo="0" yo="0" id="10000004" name="inst_3CA00BDC" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="704" y="288" w="32" h="32" xo="32" yo="0" id="10000005" name="inst_43AA5D41" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="736" y="320" w="32" h="32" xo="32" yo="0" id="10000006" name="inst_1F786D56" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="768" y="352" w="32" h="32" xo="32" yo="0" id="10000007" name="inst_ADC64B0D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="800" y="384" w="32" h="32" xo="96" yo="0" id="10000008" name="inst_0753E4EA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="576" y="384" w="32" h="32" xo="64" yo="0" id="10000009" name="inst_6F29FCD2" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="608" y="384" w="32" h="32" xo="0" yo="32" id="10000010" name="inst_84E70808" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="640" y="352" w="32" h="32" xo="0" yo="32" id="10000011" name="inst_035DC56F" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="672" y="320" w="32" h="32" xo="0" yo="32" id="10000012" name="inst_460AC97E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="704" y="320" w="32" h="32" xo="32" yo="32" id="10000013" name="inst_8EE7527E" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="704" y="352" w="32" h="32" xo="32" yo="32" id="10000014" name="inst_C245636B" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="736" y="352" w="32" h="32" xo="32" yo="32" id="10000015" name="inst_30170F80" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="768" y="384" w="32" h="32" xo="32" yo="32" id="10000016" name="inst_A9FAB117" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="736" y="384" w="32" h="32" xo="32" yo="32" id="10000017" name="inst_49E1C76D" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="704" y="384" w="32" h="32" xo="32" yo="32" id="10000018" name="inst_AB987D00" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="672" y="352" w="32" h="32" xo="0" yo="32" id="10000019" name="inst_1D1AC7A0" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="672" y="384" w="32" h="32" xo="0" yo="32" id="10000020" name="inst_B819FCD6" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background1" x="640" y="384" w="32" h="32" xo="0" yo="32" id="10000021" name="inst_E5D3E4FD" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-  </tiles>
+  <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>
   <PhysicsWorldLeft>0</PhysicsWorldLeft>
