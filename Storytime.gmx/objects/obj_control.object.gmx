@@ -29,6 +29,10 @@
 
 global.inventory = false;
 global.item=-1;
+
+bg_music = audio_emitter_create()
+
+audio_play_sound_on(bg_music,snd_bg_music,0,true)
 </string>
           </argument>
         </arguments>
@@ -120,6 +124,7 @@ game_end();
             <kind>1</kind>
             <string>///drop the item
 if (mouse_check_button_released(mb_left)){
+<<<<<<< HEAD
     if (global.item != -1){
         if  (instance_place(mouse_x,mouse_y,obj_inventory_box)){
             var box = instance_place(mouse_x,mouse_y,obj_inventory_box);
@@ -131,15 +136,40 @@ if (mouse_check_button_released(mb_left)){
                 global.item = -1;
             }else{
                 //drop item on groun
+=======
+    /*
+    if (instance_place(mouse_x,mouse_y,obj_inventory_box)){
+        global.inventory=false;
+    }*/
+
+    if global.item!=-1{
+    
+        if (instance_place(mouse_x,mouse_y,obj_inventory_box)){
+            var box = obj_inventory_box; //instance_place(mouse_x,mouse_y,obj_inventory_box);
+            
+            //make sure box is empty
+            if (box.item ==-1){
+                box.item = global.item; //box the item
+                global.item = -1; //clear the item
+            }else{
+                //drop item on ground
+>>>>>>> origin/master
                 instance_create(mouse_x,mouse_y,global.item);
                 global.item=-1;
             }
         }else{
+<<<<<<< HEAD
             //drop item on groun
             instance_create(mouse_x,mouse_y,global.item);
             global.item=-1;
+=======
+            //dorp item
+            instance_create(mouse_x,mouse_y,global.item);
+               global.item=-1;
+>>>>>>> origin/master
         }
     }
+    
 }
 </string>
           </argument>

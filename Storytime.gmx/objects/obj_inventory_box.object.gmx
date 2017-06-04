@@ -106,6 +106,10 @@ if (item=-1) &amp;&amp; global.inventory=true{
 
 if (global.inventory == true){
     draw_set_alpha(.25);
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     draw_roundrect(view_xview[0]+xstart,view_yview[0]+ystart,view_xview[0]+xstart+32,view_yview[0]+ystart+32,false);
     draw_set_alpha(1);
     if (item!=-1){
