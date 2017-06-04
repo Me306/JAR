@@ -126,13 +126,12 @@
     <object>objects\obj_ai1</object>
     <object>objects\obj_entity</object>
     <objects name="Controllers">
-      <object>objects\obj_control</object>
+      <object>objects\object21</object>
       <objects name="tutorial">
         <object>objects\obj_tutorial</object>
       </objects>
+      <object>objects\obj_controller</object>
     </objects>
-    <object>objects\obj_item_par</object>
-    <object>objects\obj_inventory_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

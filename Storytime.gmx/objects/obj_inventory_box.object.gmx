@@ -25,13 +25,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>item=-1;
+            <string>/// define item
+item = -1;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="2">
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///teake item from  box
+if (mouse_check_button_pressed(mb_left)&amp;&amp;mouse_x&gt;bbox_left&amp;&amp;mouse_x&lt;bbox_right&amp;&amp;mouse_y&gt;bbox_top&amp;&amp;mouse_y&lt;bbox_bottom){
+    if(item!=-1&amp;&amp;global.inventory==true){
+        global.item=item;
+        item=-1;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,36 +77,8 @@
           <argument>
             <kind>1</kind>
             <string>///follow view
-/*
-x = xstart+view_xview[0];
+x=xstart+view_xview[0];
 y=ystart+view_yview[0];
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="6" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///tale item from box
-if (item=-1) &amp;&amp; global.inventory=true{
-    global.item=item;
-    item=-1;
-}
 </string>
           </argument>
         </arguments>
@@ -101,19 +101,13 @@ if (item=-1) &amp;&amp; global.inventory=true{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_self();
-/*///draw the inventory box and item
-
-if (global.inventory == true){
-    draw_set_alpha(.25);
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
-    draw_roundrect(view_xview[0]+xstart,view_yview[0]+ystart,view_xview[0]+xstart+32,view_yview[0]+ystart+32,false);
+            <string>///draw box and item
+if global.inventory{
+    draw_set_alpha(.55);
+    draw_roundrect(view_xview[0]+xstart,view_yview+ystart,view_xview[0]+xstart+32,view_yview+ystart+32,false);
     draw_set_alpha(1);
-    if (item!=-1){
-        draw_sprite(object_get_sprite(item), 0,view_xview[0]+xstart+16,view_yview[0]+ystart+16);
+    if item!=-1{
+        draw_sprite(object_get_sprite(item),0,view_xview[0]+xstart+16,view_yview+ystart+16);
     }
 }
 </string>
