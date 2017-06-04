@@ -35,6 +35,10 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; bbox_left &amp;&
     }
     
 }
+if instance_place(mouse_x,mouse_y,obj_item_par){
+apple = instance_place(mouse_x,mouse_y,obj_item_par);
+apple.visible=false;
+}
 </string>
           </argument>
         </arguments>

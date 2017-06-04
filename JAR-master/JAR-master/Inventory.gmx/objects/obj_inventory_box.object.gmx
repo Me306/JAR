@@ -49,7 +49,7 @@ item = -1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///follow the view
+            <string>/*///follow the view
 
 x = xstart+view_xview[0];
 y = ystart+view_yview[0];

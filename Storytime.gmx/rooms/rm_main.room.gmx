@@ -67,10 +67,12 @@
     <instance objName="obj_ai1" x="608" y="736" name="inst_9AA5C65D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_companion" x="768" y="768" name="inst_1CBEF1EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_item_par" x="1152" y="832" name="inst_32701859" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="8" y="8" name="inst_89F9D090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="48" y="8" name="inst_17BB2A8D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="88" y="8" name="inst_3207C64C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_inventory_box" x="128" y="8" name="inst_43E242BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="&lt;undefined&gt;" x="8" y="8" name="inst_89F9D090" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_item_par" x="1000" y="784" name="inst_1E4C3ACD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_box" x="768" y="592" name="inst_C54EEAF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_box" x="616" y="816" name="inst_02F5A079" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_box" x="824" y="848" name="inst_A8F0F7F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_inventory_box" x="928" y="632" name="inst_323EA7BE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background1" x="608" y="352" w="32" h="32" xo="0" yo="0" id="10000001" name="inst_6A311AE8" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

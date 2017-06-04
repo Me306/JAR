@@ -92,30 +92,52 @@ if(mouse_y &gt; obj_body1.y){
 if keyboard_check_pressed(ord("I")){
     global.inventory=!global.inventory;
 }
+
+if(instance_place(mouse_x,mouse_y,obj_inventory_box)){
+game_end();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="56">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///drop the item
 if (mouse_check_button_released(mb_left)){
-    if (instance_place(mouse_x,mouse_y,obj_inventory_box)){
-        global.inventory=false;
-    }
-    for (i=-10;i&lt;10;i++){
-    if global.item!=-1{
-        
-            if (instance_place(mouse_x+i,mouse_y+i,obj_inventory_box)){
-                var box = obj_inventory_box; //instance_place(mouse_x,mouse_y,obj_inventory_box);
-                
-                //make sure box is empty
-                if (box.item ==-1){
-                    box.item = global.item; //box the item
-                    global.item = -1; //clear the item
-                }else{
-                    //drop item on ground
-                    instance_create(mouse_x,mouse_y,global.item);
-                    global.item=-1;
-                }
+    if (global.item != -1){
+        if  (instance_place(mouse_x,mouse_y,obj_inventory_box)){
+            var box = instance_place(mouse_x,mouse_y,obj_inventory_box);
+            
+            //make sure box is empty
+            if (box.item==-1){
+                //box the item
+                box.item = global.item
+                global.item = -1;
             }else{
-                //dorp item
+                //drop item on groun
                 instance_create(mouse_x,mouse_y,global.item);
-                   global.item=-1;
+                global.item=-1;
             }
+        }else{
+            //drop item on groun
+            instance_create(mouse_x,mouse_y,global.item);
+            global.item=-1;
         }
     }
 }

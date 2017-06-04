@@ -122,7 +122,6 @@
       <object>objects\obj_sign</object>
       <object>objects\obj_speaker</object>
       <object>objects\obj_glow</object>
-      <object>objects\obj_inventory_box</object>
     </objects>
     <object>objects\obj_ai1</object>
     <object>objects\obj_entity</object>
@@ -133,6 +132,7 @@
       </objects>
     </objects>
     <object>objects\obj_item_par</object>
+    <object>objects\obj_inventory_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

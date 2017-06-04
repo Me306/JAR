@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///create item var
-item =-1;
+            <string>item=-1;
 </string>
           </argument>
         </arguments>
@@ -49,15 +48,16 @@ item =-1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///follow the view
+            <string>///follow view
+/*
 x = xstart+view_xview[0];
-y = ystart + view_yview[0];
+y=ystart+view_yview[0];
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="6" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -75,11 +75,9 @@ y = ystart + view_yview[0];
           <argument>
             <kind>1</kind>
             <string>///tale item from box
-if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; bbox_left &amp;&amp; mouse_x &lt; bbox_right &amp;&amp; mouse_y &gt; bbox_top &amp;&amp; mouse_y &lt; bbox_bottom ){
-    if (item!=-1 &amp;&amp; global.inventory=true){
-        global.item = item;
-        item = -1;
-    }
+if (item=-1) &amp;&amp; global.inventory=true{
+    global.item=item;
+    item=-1;
 }
 </string>
           </argument>
@@ -103,17 +101,16 @@ if (mouse_check_button_pressed(mb_left) &amp;&amp; mouse_x &gt; bbox_left &amp;&
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///draw the inventory box and item
+            <string>draw_self();
+/*///draw the inventory box and item
 
-if (global.inventory){
+if (global.inventory == true){
     draw_set_alpha(.25);
-    draw_self();
     draw_roundrect(view_xview[0]+xstart,view_yview[0]+ystart,view_xview[0]+xstart+32,view_yview[0]+ystart+32,false);
     draw_set_alpha(1);
     if (item!=-1){
         draw_sprite(object_get_sprite(item), 0,view_xview[0]+xstart+16,view_yview[0]+ystart+16);
     }
-    
 }
 </string>
           </argument>
