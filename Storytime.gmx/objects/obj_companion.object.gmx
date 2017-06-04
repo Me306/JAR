@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_pet1</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -138,7 +138,7 @@ spdx = (targetx - x)/10
 x+=spdx
 spdy = (targety - y)/10
 y+=spdy
-
+/*
 if(image_index = 1 ){
     if(!audio_is_playing(snd_scream)) audio_play_sound(snd_scream,1,true)
 } else audio_stop_sound(snd_scream)

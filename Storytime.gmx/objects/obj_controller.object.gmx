@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Create Global items
-
+/*
 bg_music=audio_emitter_create();
 audio_play_sound_on(bg_music,snd_bg_music,true,1);
 </string>
@@ -59,48 +59,6 @@ if keyboard_check_pressed(vk_escape){
 if keyboard_check_pressed(ord("R")){
     game_restart();
 }
-
-//mouse
-if (mouse_x&gt;obj_body1.x){
-    minix = (mouse_x-obj_body1.x)/2 + obj_body1.x;
-}else{
-    minix = (obj_body1.x - mouse_x)/2 + mouse_x;
-}
-if (mouse_y&gt;obj_body1.y){
-    miniy = (mouse_y-obj_body1.y)/2 + obj_body1.y;
-}else{
-    miniy = (obj_body1.y - mouse_y)/2 + mouse_y;
-}
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///draw curser and held item
-
-draw_sprite_ext(spr_mouse,0,mouse_x,mouse_y,1,1,0,c_white,1);
-
-//minicursor
-
-draw_sprite_ext(spr_mouse,1,minix,miniy,1,1,0,c_white,1);
 
 
 

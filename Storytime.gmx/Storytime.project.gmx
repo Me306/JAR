@@ -125,13 +125,14 @@
     </objects>
     <object>objects\obj_ai1</object>
     <object>objects\obj_entity</object>
+    <object>objects\obj1</object>
     <objects name="Controllers">
-      <object>objects\object21</object>
       <objects name="tutorial">
         <object>objects\obj_tutorial</object>
       </objects>
       <object>objects\obj_controller</object>
     </objects>
+    <object>objects\obj_mouse</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>

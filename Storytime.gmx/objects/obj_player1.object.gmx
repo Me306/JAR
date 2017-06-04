@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>obj_entity</parentName>
-  <maskName>&lt;undefined&gt;</maskName>
+  <maskName>spr_deadbody</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -65,6 +65,8 @@ scr_attack(obj_mainhand1, spr_swing, spr_deadmainhand)
 if(mouse_check_button_pressed(mb_left) || keyboard_check_pressed(vk_space)){
     atck = 0
 }
+
+
 </string>
           </argument>
         </arguments>
