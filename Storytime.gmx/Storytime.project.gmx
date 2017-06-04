@@ -108,8 +108,8 @@
       <object>objects\obj_mainhand1</object>
       <object>objects\obj_offhand1</object>
       <object>objects\obj_shadow1</object>
-      <object>objects\obj_player1</object>
       <object>objects\obj_companion</object>
+      <object>objects\obj_player1</object>
     </objects>
     <objects name="envir">
       <object>objects\obj_wall</object>

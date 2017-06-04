@@ -29,6 +29,10 @@
 
 global.inventory = false;
 global.item=-1;
+
+bg_music = audio_emitter_create()
+
+audio_play_sound_on(bg_music,snd_bg_music,0,true)
 </string>
           </argument>
         </arguments>
