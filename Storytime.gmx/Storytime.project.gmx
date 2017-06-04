@@ -69,10 +69,12 @@
       <sprite>sprites\spr_healthBar</sprite>
       <sprite>sprites\spr_fireball</sprite>
       <sprite>sprites\spr_mouse</sprite>
+      <sprite>sprites\spr_inventory_box</sprite>
     </sprites>
     <sprites name="structures">
       <sprite>sprites\sprite22</sprite>
     </sprites>
+    <sprite>sprites\spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_grass</background>
@@ -95,7 +97,9 @@
     </scripts>
     <scripts name="Controller Scripts">
       <script>scripts\destroy.gml</script>
+      <script>scripts\scr_draw_shadow.gml</script>
     </scripts>
+    <script>scripts\scr_on_obj.gml</script>
   </scripts>
   <objects name="objects">
     <objects name="player 1">
@@ -110,10 +114,6 @@
     <objects name="envir">
       <object>objects\obj_wall</object>
       <object>objects\obj_grass</object>
-      <objects name="tutorial">
-        <object>objects\obj_control</object>
-        <object>objects\obj_tutorial</object>
-      </objects>
       <object>objects\obj_nightCycle</object>
       <object>objects\obj_lamp</object>
     </objects>
@@ -122,9 +122,17 @@
       <object>objects\obj_sign</object>
       <object>objects\obj_speaker</object>
       <object>objects\obj_glow</object>
+      <object>objects\obj_inventory_box</object>
     </objects>
     <object>objects\obj_ai1</object>
     <object>objects\obj_entity</object>
+    <objects name="Controllers">
+      <object>objects\obj_control</object>
+      <objects name="tutorial">
+        <object>objects\obj_tutorial</object>
+      </objects>
+    </objects>
+    <object>objects\obj_item_par</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_main</room>
